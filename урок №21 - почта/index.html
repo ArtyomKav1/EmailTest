@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="form">
+            <form action="#" id="form" class="form__body">
+                <h1 class="form__titlee">Отправка данных на почту</h1>
+                <div class="form__item">
+                    <label for="formName" class="form__label">Имя*:</label>
+                    <input id="formName" type="text" name="name" class="form__input _reg">
+                </div>
+                <div class="form__item">
+                    <label for="formEmail" class="form__label">Email*:</label>
+                    <input id="formEmail" type="text" name="email" class="form__input _reg _email">
+                </div>
+                <div class="form__item">
+                    <div class="form__label">Левша или правша?</div>
+                    <div class="options">
+
+                        <div class="options__item">
+                            <input id="formRightHanded" type="radio" value="right" name="hand" class="options__input">
+                            <label for="formRightHanded" class="option__label"><span>Правша</span> </label>
+                        </div>
+                        <div class="options__item">
+                            <input id="formRightHanded" checked type="radio" value="left" name="hand"
+                                class="options__input">
+                            <label for="formRightHanded" class="option__label"><span>левша</span> </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <label for="formMessage" class="form__label">Сообщение</label>
+                    <textarea name="message" id="formMessage" cols="30" rows="10" class="form__input"></textarea>
+                </div>
+                <div class="form__item">
+                    <div class="form__label">Возраст^</div>
+                    <select name="age" id="select">
+                        <option value="от 18 до 25" selected>молодой</option>
+                        <option value="от 25 до 45">старый</option>
+                        <option value="от 45">супер старый</option>
+                    </select>
+                </div>
+                <div class="form__item">
+                    <div class="form__label">Прекрепить фото</div>
+                    <div class="file">
+                        <div class="file__item">
+                            <input id="formImage" accept=".jpg, .png, .gif" type="file" name="image"
+                                class="file__input">
+                            <div class="file__button">Выбрать</div>
+                        </div>
+                        <div id="formPreview" class="file__preview"></div>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="checkbox">
+                        <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _reg">
+                        <label for="formAgreement" class="checkbox__label"><span>Я даю согласие на обработку
+                                персональных данных</span></label>
+
+                    </div>
+
+                </div>
+                <button type="submit" class="form__button">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="/main.js"></script>
+</body>
+
+</html>
